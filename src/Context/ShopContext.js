@@ -4,9 +4,11 @@ import all_product from "../Components/Assets/all_product";
 export const ShopContext = createContext(null);
 const getDefaultCart = () => {
   let cart = {};
-  for (let index = 0; index < all_product.length + 1; index++) {
+  for (let index = 0; index < all_product.length; index++) {
     cart[index] = 0;
   }
+  console.log(cart);
+
   return cart;
 };
 
